@@ -1,0 +1,8 @@
+aiogram
+asyncio
+datetime
+requests
+beautifulsoup4
+sqlalchemy
+psycopg2
+lxml
