@@ -106,11 +106,19 @@ def get_link(url, link):
 def get_article_id(article_url):
     return article_url.split("/")[-1]
 
+def checkSite():
+    r = requests.get(url=url, headers = headers)
+    soup = BeautifulSoup(r.text,"lxml")
+
+    print(soup)
+
+    return
 
 def main():
     #get_first_news()
     counter = 1 + 1
     #check_news_update()
+    checkSite()
 
 if __name__ == "__main__":
     main()
